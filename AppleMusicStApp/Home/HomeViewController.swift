@@ -58,7 +58,7 @@ extension HomeViewController: UICollectionViewDataSource {
 //                let item = self.trackManager.tracks[indexPath.item]
                 playerVC.simplePlayer.replaceCurrentTime(with: item)
                 self.present(playerVC, animated: true, completion: nil)
-                print("=====> item title : \(item.convertToTrack()?.title)")
+                print("=====> item title : \(String(describing: item.convertToTrack()?.title))")
             }
             return header
         default:
